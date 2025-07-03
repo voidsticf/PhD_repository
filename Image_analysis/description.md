@@ -40,9 +40,9 @@ or
 2. **Compute the Cross-Power Spectrum**
    - The cross-power spectrum is given by:
    
-     $
-     R = \frac{G_\alpha \cdot G^{\star}_{\beta}}{\left| G_\alpha \cdot G^{\star}_{\beta} \right|}
-     $
+     
+     $R = \frac{G_\alpha \cdot G^{\star}_{\beta}}{\left| G_\alpha \cdot G^{\star}_{\beta} \right|}$
+     
    
    - $G^{\star}_{\beta}$ is the complex conjugate of $G_{\beta}$.
    - The denominator $\left| G_\alpha \cdot G^{\star}_{\beta} \right|$ ensures normalization, making the result purely phase-based.
