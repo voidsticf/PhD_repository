@@ -40,7 +40,7 @@ or
 2. **Compute the Cross-Power Spectrum**
    - The cross-power spectrum is given by:
    
-     
+     $ G_\alpha \cdot G^{\star}_{\beta} $
     $$
     R = \frac{G_\alpha \cdot G^{\star}_{\beta}}{\left| G_\alpha \cdot G^{\star}_{\beta} \right|}
     $$
