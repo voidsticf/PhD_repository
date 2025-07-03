@@ -1,7 +1,7 @@
 ### Information for the script
 
 #### Goal:
-Image analysis between two sets of images (reference and main) that display an offset relative to them. The correction is facilitated via the [phase correlation](./Image_analysis/equation.pdf) of the images.
+Image analysis between two sets of images (reference and main) that display an offset relative to them. The correction is facilitated via the [phase correlation](./phase_correlation.pdf) of the images.
 
 ##### Code Comment:
 
