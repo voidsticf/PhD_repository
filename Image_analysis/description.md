@@ -41,7 +41,7 @@ or
    - The cross-power spectrum is given by:
    
      
-    $ R = \frac{G_\alpha \cdot G^{\star}_{\beta}}{\left| G\alpha \cdot G^{\star}_{\beta} \right|} $
+    $$ R = \frac{G_\alpha \cdot G^{\star}_{\beta}}{\left| G\alpha \cdot G^{\star}_{\beta} \right|} $$
      
    
    - $G^{\star}_{\beta}$ is the complex conjugate of $G_{\beta}$.
