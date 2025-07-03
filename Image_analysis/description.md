@@ -28,39 +28,3 @@ or
     dy -= correlation.shape[0] // 2
     dx -= correlation.shape[1] // 2
 
-#### Phase Correlation – Python Implementation
-
-1. **Compute the Fourier Transforms of the Two Images**
-   - Let $G_{\alpha}$ and $G_{\beta}$ be the Fourier transforms of the reference image $I_\alpha$ and the shot image $I_\beta$:
-   
-     $
-     G_\alpha = \mathcal{F}\{I_\alpha\}, \quad G_\beta = \mathcal{F}\{I_\beta\}
-     $
-
-2. **Compute the Cross-Power Spectrum**
-   - The cross-power spectrum is given by:
-   
-     $G_\alpha \cdot G^{\star}_{\beta}$
-
-     
-   
-   - The $ G^{\star}_{\beta} $ is the complex conjugate of $G_{\beta}$.
-   - The denominator $\left| G_\alpha \cdot G^{\star}_{\beta} \right|$ ensures normalization, making the result purely phase-based.
-
-3. **Inverse Fourier Transform to Get the Phase Correlation Map**
-   - The inverse Fourier transform is applied to obtain the phase correlation function $r(x,y)$:
-   
-     $
-     r = \mathcal{F}^{-1}\{R\}
-     $
-   
-   - $r(x,y)$ is a real-valued function, even though $R$ is complex.
-
-4. **Find the Peak Location**
-   - The shift $(\Delta x, \Delta y)$ is found by detecting the peak of $r(x,y)$:
-   
-     $
-     (\Delta x, \Delta y) = \arg\max \{ r(x, y) \}
-     $
-
-
