@@ -44,7 +44,7 @@ or
 
      
    
-   - The $G^{\star}_{\beta}$ is the complex conjugate of $G_{\beta}$.
+   - The $ G^{\star}_{\beta} $ is the complex conjugate of $G_{\beta}$.
    - The denominator $\left| G_\alpha \cdot G^{\star}_{\beta} \right|$ ensures normalization, making the result purely phase-based.
 
 3. **Inverse Fourier Transform to Get the Phase Correlation Map**
