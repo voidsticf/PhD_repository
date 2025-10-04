@@ -1,8 +1,13 @@
 import numpy as np
-import matplotlib.pyplot as plt
-import os
 import cv2
 import imageio
+from scipy.fftpack import fft2, ifft2, fftshift
+import scipy.ndimage as ndi
+from PIL import Image
+from scipy.signal.windows import gaussian
+import matplotlib.pyplot as plt
+import os 
+
 
 
 
@@ -96,6 +101,7 @@ def image_division_function(path_of_the_images_to_process,path_to_copy_all_chang
         result_image = Image.fromarray(result)
         
         # Save the result as a TIFF file
+        imageio.imwrite(reference_images[i][:-4]+'_shifted.tif',shifted_reference_image) 
         string_to_save=shot_images[i][:-4]+'_divided.tif'
         result_image.save(string_to_save)
         
