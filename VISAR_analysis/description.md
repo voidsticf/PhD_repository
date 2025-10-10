@@ -5,7 +5,7 @@ Velocity interferometer system for any reflector (VISAR), Streak Optical Pyromet
 
 It opens the neutrino session (.neus files), saves the txt file on a specific folder.
 
-* *Parameters to change* 
+ <ins> *Parameters to change* </ins>
 
 ```
 1. shots_path = "..." # path of the data 
