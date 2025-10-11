@@ -1,6 +1,6 @@
 
 import matplotlib
-matplotlib.use('qtagg')   ###ENABLE ONLY FOR THE INTERACTIVE PLOT. THEN YOU HAVE TO RESTART THE KERNEL
+# matplotlib.use('qtagg')   ###ENABLE ONLY FOR THE INTERACTIVE PLOT. THEN YOU HAVE TO RESTART THE KERNEL
 import numpy as np
 from matplotlib import pyplot as plt
 from scipy import stats, interpolate
