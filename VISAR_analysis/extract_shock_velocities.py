@@ -4,20 +4,13 @@ import matplotlib
 import numpy as np
 from matplotlib import pyplot as plt
 from scipy import stats, interpolate
-from scipy.integrate import trapezoid, cumulative_trapezoid
-from scipy.optimize import newton
-from scipy.signal import savgol_filter
 from pathlib import Path
 import pandas as pd
-import copy
 import os 
-import shutil
 import re
 import subprocess
-from scipy.optimize import curve_fit
 from multiprocessing import get_context
 from matplotlib.widgets import Slider
-import copy
 
 ################################################################################################################################################################################################################################################
 
