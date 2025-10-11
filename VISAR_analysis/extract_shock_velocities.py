@@ -28,11 +28,9 @@ class process_txt:
         self.path_xlsx = path_xlsx
         self.data = pd.read_csv(self.path_txt,header = None )
         self.visar2_index = self.data[self.data[0].str.contains('#VISAR 2', na=False)].index[0]
-        # self.sop_index = self.data[self.data[0].str.contains('#SOP', na=False)].index[0]
 
         self.data_visar1 = self.data.iloc[:self.visar2_index].reset_index(drop=True)
         self.data_visar2 = self.data.iloc[self.visar2_index:].reset_index(drop=True)
-        # self.data_sop = self.data.iloc[self.sop_index:].reset_index(drop=True)
 
         self.index_for_values_visar1 = self.data_visar1[~self.data_visar1[0].str.startswith('#', na=False)].index[0]
         self.index_for_values_visar2 = self.data_visar2[~self.data_visar2[0].str.startswith('#', na=False)].index[0]
