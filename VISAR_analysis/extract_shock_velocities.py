@@ -19,7 +19,7 @@ class process_txt:
     def __init__(self,path_txt,path_xlsx):
         self.path_txt = path_txt
         self.path_xlsx = path_xlsx
-        self.data = pd.read_csv(self.path_txt,header = None )
+        self.data = pd.read_csv(self.path_xlsx,header = None )
         self.visar2_index = self.data[self.data[0].str.contains('#VISAR 2', na=False)].index[0]
 
         self.data_visar1 = self.data.iloc[:self.visar2_index].reset_index(drop=True)
